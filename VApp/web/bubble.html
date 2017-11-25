@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+		<meta charset="utf-8">
+		<title>Interactive Bubble Chart</title>
+			
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/bubblestyle.css">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	 
+	</head>
+ 
+	<body>
+	<style>
+    body{
+        margin-top:2%; 
+    }
+    .popover {
+        z-index: 9999; /* A value higher than 1010 that solves the problem */
+    }
+</style>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style = " background-color:white">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="../web/index.html">Airlines Analyse Dashboard</a>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav pull-right">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a class="page-scroll" href="../web/index.html">Home</a>
+                </li>
+				<li>
+                    <a class="page-scroll" href="../web/delay.html">Delay Analysis</a>
+                </li>
+				<li>
+                    <a class="page-scroll" href="../web/bubble.html">Cancellation Analysis</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="../web/network.html">Network Analysis</a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+	
+	
+		<div id="container">
+			
+			</br>
+			</div>
+			<div id="charts">
+			
+				<div id="bubbleContainer">
+				<h2>Airline Cancellation</h2>
+				<div id="overallRatings" class="btn-group btn-info top-btn" data-toggle="buttons">
+				  <label class="btn active ratingBtn" id="reset">
+					<input type="radio" name="options">Cancellation Overview</label>
+				  <label class="btn ratingBtn" id="ratingCategory">
+					<input type="radio" name="options">Cancellation Category Distribution</label>
+				</div>
+				<br/>
+				<br/>
+				<div id="bubbleChart">
+				<p>A - Airline/Carrier; B - Weather; C - National Air System; D -Security </P>
+				</div>
+				</div>
+		</div>
+		<script src="../js/bubble.js"></script>
+  </body>
+ 
+</html>

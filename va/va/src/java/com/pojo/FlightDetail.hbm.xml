@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14 Nov, 2017 2:59:23 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.pojo.FlightDetail" table="flight_detail" catalog="va">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="year" type="int">
+            <column name="year" not-null="true" />
+        </property>
+        <property name="month" type="int">
+            <column name="month" not-null="true" />
+        </property>
+        <property name="day" type="int">
+            <column name="day" not-null="true" />
+        </property>
+        <property name="dayOfWeek" type="int">
+            <column name="day_of_week" not-null="true" />
+        </property>
+        <property name="airline" type="string">
+            <column name="airline" length="45" not-null="true" />
+        </property>
+        <property name="tailNumber" type="string">
+            <column name="tail_number" length="45" not-null="true" />
+        </property>
+        <property name="originAirport" type="string">
+            <column name="origin_airport" length="45" not-null="true" />
+        </property>
+        <property name="destinationAirport" type="string">
+            <column name="destination_airport" length="45" not-null="true" />
+        </property>
+        <property name="departureDelay" type="int">
+            <column name="departure_delay" not-null="true" />
+        </property>
+        <property name="arrivalDelay" type="int">
+            <column name="arrival_delay" not-null="true" />
+        </property>
+        <property name="diverted" type="int">
+            <column name="diverted" not-null="true" />
+        </property>
+        <property name="cancelled" type="int">
+            <column name="cancelled" not-null="true" />
+        </property>
+        <property name="cancellationReason" type="string">
+            <column name="cancellation_reason" length="45" not-null="true" />
+        </property>
+        <property name="airSystemDelay" type="int">
+            <column name="air_system_delay" not-null="true" />
+        </property>
+        <property name="securityDelay" type="int">
+            <column name="security_delay" not-null="true" />
+        </property>
+        <property name="airlineDelay" type="int">
+            <column name="airline_delay" not-null="true" />
+        </property>
+        <property name="lateAircraftDelay" type="int">
+            <column name="late_aircraft_delay" not-null="true" />
+        </property>
+        <property name="weatherDelay" type="int">
+            <column name="weather_delay" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

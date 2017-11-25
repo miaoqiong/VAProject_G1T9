@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+		<meta charset="utf-8">
+		<title>Interactive Bubble Chart</title>
+			
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/bubblestyle.css">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	 
+	</head>
+ 
+	<body>
+	<style>
+    body{
+        margin-top:2%; 
+    }
+    .popover {
+        z-index: 9999; /* A value higher than 1010 that solves the problem */
+    }
+</style>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style = " background-color:white">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="../web/index.html">Airlines Analyse Dashboard</a>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav pull-right">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a class="page-scroll" href="../web/index.html">Home</a>
+                </li>             
+                <li>
+                    <a class="page-scroll" href="../web/delay.html">Delay Analysis</a>
+                </li>
+				<li>
+                    <a class="page-scroll" href="../web/bubble.html">Cancellation Analysis</a>
+                </li>
+				<li>
+                    <a class="page-scroll" href="../web/network.html">Network Analysis</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</br>
+<Br/>
+		<div id="container">
+		<div class = "col-lg-12">
+		<center><div style = "width:80%">
+		<p>Flight delays has been a very common problem for travelers, the delay can be attributable to various problems, such as, aircraft issues, weather issues at origin airport or/and destination airport. The delay has no doubts will disappoint air travelers and affect their flight experience greatly. Thus, in this project, our team aims to investigate the performance of different airlines and flight delays in detail.</p>
+		<p>In addition, airport network is a very critical and complex transportation infrastructure for a nation, it is increasingly important for public policy considerations. The disruptions of the airport network, caused by terrorist attack, disease transmission or other reasons, can lead to huge economic loss. Thus, the study on the airport network can assist us better understand the relationship between different airports, for example, identify most critical airport, and take proactive measures to prevent occurrence of disruptions.</p>
+		</div></center>
+		</div>
+		
+		<div class="col-lg-12">
+		<center>
+		<div class='tableauPlaceholder' 
+     id='viz1511015520102' 
+     style='position: relative'>
+    <noscript>
+    <a href='#'>
+        <img alt='Dashboard 3 ' 
+             src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ov&#47;OverviewofAirportsandFlights&#47;Dashboard3&#47;1_rss.png' 
+             style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+        <param name='name' value='OverviewofAirportsandFlights&#47;Dashboard3' />
+        <!--<param name='tabs' value='no' /><param name='toolbar' value='yes' />-->
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ov&#47;OverviewofAirportsandFlights&#47;Dashboard3&#47;1.png' />
+        <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='filter' value='publish=yes' />
+    </object>
+</div>                
+
+
+<script type='text/javascript'>
+    var divElement = document.getElementById('viz1511015520102');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '1280px';
+    vizElement.style.height = '827px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+</center>
+		</div>
+		
+		</div>
+  </body>
+ 
+</html>
